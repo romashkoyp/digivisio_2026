@@ -84,13 +84,33 @@
 
     ul { margin: 0; padding-left: 18px; }
     li { margin-bottom: 7px; color: #cbd5e1; }
-
+    
     a {
       color: #f9a8d4;
-      text-decoration: none;
-      border-bottom: 1px dashed transparent;
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
     }
-    a:hover { border-bottom-color: #f9a8d4; }
+
+    a:hover {
+      text-decoration-style: dashed;
+    }
+
+    .link-icon {
+      display: inline-flex;
+      align-items: center;
+      line-height: 0;
+    }
+
+    .link-icon svg {
+      width: 1.1em;
+      height: 1.1em;
+      flex: none;
+      stroke: currentColor;
+    }
 
     .footer-tip {
       margin-top: 20px;
@@ -113,69 +133,44 @@
   <main class="container">
     <h1>Graphic Designer Roadmap</h1>
     <p class="subtitle">
-      A practical step-by-step learning path for becoming a strong graphic designer.
-      Courses are ordered from fundamentals to professional strategy and delivery.
+      A practical step-by-step learning path for becoming a strong {profession} based on demanding skills.
+      Path includes {int} courses with {int} credits.
+      You need at least {months} to complete the roadmap (5 credits = 1 month of full-time study).
     </p>
-
-    <div class="meta">
-      <span>Level flow: Basics -> Intermediate -> Advanced -> Pro</span>
-      <span>Total stages: 5</span>
-      <span>Format: Click course title to open source</span>
-    </div>
-
     <section class="timeline">
       <article class="stage">
-        <h2>1) Foundation: Visual Basics & Core Design Language</h2>
-        <p class="goal">Goal: build core visual literacy and composition skills.</p>
+        <h2>1) Foundation</h2>
+        <p class="goal">Goal</p> 
         <ul>
-          <li><a href="https://opin.fi/en/study-options/OAMK/basics-of-visual-communication/022ed481-fda4-4518-b6f6-c102a5e6b80a" target="_blank" rel="noopener noreferrer">Basics of Visual Communication</a> (3 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/introduction-into-typography/c46c16a9-65b9-441d-8a82-ad1f4afeff60" target="_blank" rel="noopener noreferrer">Introduction into Typography</a> (1 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Humak/visual-communication/37d11baf-e3d1-4094-8a44-624d69038fc9" target="_blank" rel="noopener noreferrer">Visual Communication</a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/OAMK/basics-of-visual-communication/022ed481-fda4-4518-b6f6-c102a5e6b80a" target="_blank" rel="noopener noreferrer">Basics of Visual Communication<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (3 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/introduction-into-typography/c46c16a9-65b9-441d-8a82-ad1f4afeff60" target="_blank" rel="noopener noreferrer">Introduction into Typography<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (1 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Humak/visual-communication/37d11baf-e3d1-4094-8a44-624d69038fc9" target="_blank" rel="noopener noreferrer">Visual Communication<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Aalto/diving-into-radical-creativity/4b5197cf-c5b8-4c25-a42e-b3d591e6e8ec" target="_blank" rel="noopener noreferrer">Diving into Radical Creativity<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (3 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/creativity-and-wellbeing-1/5b35e7ed-71ac-4898-90fe-51308db9153c" target="_blank" rel="noopener noreferrer">Creativity and Wellbeing 1<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (1 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc" target="_blank" rel="noopener noreferrer">Service Design Sprint<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (2 cr)</li>
         </ul>
       </article>
 
       <article class="stage">
-        <h2>2) Creative Practice: Ideation & Concept Development</h2>
-        <p class="goal">Goal: generate original ideas and solve design problems creatively.</p>
-        <ul>
-          <li><a href="https://opin.fi/en/study-options/Aalto/diving-into-radical-creativity/4b5197cf-c5b8-4c25-a42e-b3d591e6e8ec" target="_blank" rel="noopener noreferrer">Diving into Radical Creativity</a> (3 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/creativity-and-wellbeing-1/5b35e7ed-71ac-4898-90fe-51308db9153c" target="_blank" rel="noopener noreferrer">Creativity and Wellbeing 1</a> (1 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc" target="_blank" rel="noopener noreferrer">Service Design Sprint</a> (2 cr)</li>
-        </ul>
-      </article>
-
-      <article class="stage">
-        <h2>3) Digital Design: UX/UI & Web Fundamentals</h2>
+        <h2>2) Intermediate</h2>
         <p class="goal">Goal: expand from visual design into product and interface workflows.</p>
         <ul>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed" target="_blank" rel="noopener noreferrer">Introduction to Digital Services</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/JAMK/basics-of-web-development/8588a9ae-5196-4f76-8474-113747894eac" target="_blank" rel="noopener noreferrer">Basics of Web Development</a> (4 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed" target="_blank" rel="noopener noreferrer">Introduction to Digital Services<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/JAMK/basics-of-web-development/8588a9ae-5196-4f76-8474-113747894eac" target="_blank" rel="noopener noreferrer">Basics of Web Development<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (4 cr)</li>
         </ul>
       </article>
 
       <article class="stage">
-        <h2>4) Professional Growth: Brand, Communication & Strategy</h2>
+        <h2>3) Professional</h2>
         <p class="goal">Goal: design with business context and communicate professionally.</p>
         <ul>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/brand-experience-development/35996418-28ef-4630-935c-d5624e82def7" target="_blank" rel="noopener noreferrer">Brand Experience Development</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/professional-communication/e7c29ad3-7955-41ce-831e-ce9f57a6d489" target="_blank" rel="noopener noreferrer">Professional Communication</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/the-craft-of-strategising/d2466218-ed58-42fa-8126-f2dc0cafdca5" target="_blank" rel="noopener noreferrer">The Craft of Strategising</a> (5 cr)</li>
-        </ul>
-      </article>
-
-      <article class="stage">
-        <h2>5) Pro Delivery: Teamwork, Time & Project Execution</h2>
-        <p class="goal">Goal: deliver design work reliably in real project environments.</p>
-        <ul>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3" target="_blank" rel="noopener noreferrer">Teamwork and Project Management</a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/brand-experience-development/35996418-28ef-4630-935c-d5624e82def7" target="_blank" rel="noopener noreferrer">Brand Experience Development<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/professional-communication/e7c29ad3-7955-41ce-831e-ce9f57a6d489" target="_blank" rel="noopener noreferrer">Professional Communication<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/the-craft-of-strategising/d2466218-ed58-42fa-8126-f2dc0cafdca5" target="_blank" rel="noopener noreferrer">The Craft of Strategising<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3" target="_blank" rel="noopener noreferrer">Teamwork and Project Management<span class="link-icon" aria-hidden="true"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a> (5 cr)</li>
         </ul>
       </article>
     </section>
-
-    <p class="footer-tip">
-      Planning tip: Complete 1 stage every 4-6 weeks and build one portfolio artifact per stage
-      (poster, brand concept, typography set, landing page mockup, or campaign kit).
-    </p>
   </main>
 </body>
 </html>
