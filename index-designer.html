@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Graphic Designer Skills Roadmap</title>
+  <title></title>
   <style>
     :root {
       --bg: #0f172a;
@@ -118,6 +118,17 @@
       border-radius: 10px;
     }
 
+    .stat {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin: 0 6px;
+      font-size: 0.98em;
+    }
+
     @media (max-width: 700px) {
       h1 { font-size: 1.6rem; }
       .timeline { margin-left: 8px; padding-left: 16px; }
@@ -127,46 +138,91 @@
 </head>
 <body>
   <main class="container">
-    <h1>Graphic Designer Roadmap</h1>
-    <p class="subtitle">
-      A practical step-by-step learning path for becoming a strong {profession} based on demanding skills.
-      Path includes {int} courses with {int} credits.
-      You need at least {months} to complete the roadmap (5 credits = 1 month of full-time study).
-    </p>
-    <section class="timeline">
-      <article class="stage">
-        <h2>1) Foundation</h2>
-        <p class="goal">Goal</p> 
-        <ul>
-          <li><a href="https://opin.fi/en/study-options/OAMK/basics-of-visual-communication/022ed481-fda4-4518-b6f6-c102a5e6b80a" target="_blank" rel="noopener noreferrer">Basics of Visual Communication</a> (3 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/introduction-into-typography/c46c16a9-65b9-441d-8a82-ad1f4afeff60" target="_blank" rel="noopener noreferrer">Introduction into Typography</a> (1 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Humak/visual-communication/37d11baf-e3d1-4094-8a44-624d69038fc9" target="_blank" rel="noopener noreferrer">Visual Communication</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Aalto/diving-into-radical-creativity/4b5197cf-c5b8-4c25-a42e-b3d591e6e8ec" target="_blank" rel="noopener noreferrer">Diving into Radical Creativity</a> (3 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/creativity-and-wellbeing-1/5b35e7ed-71ac-4898-90fe-51308db9153c" target="_blank" rel="noopener noreferrer">Creativity and Wellbeing 1</a> (1 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc" target="_blank" rel="noopener noreferrer">Service Design Sprint</a> (2 cr)</li>
-        </ul>
-      </article>
-
-      <article class="stage">
-        <h2>2) Intermediate</h2>
-        <p class="goal">Goal: expand from visual design into product and interface workflows.</p>
-        <ul>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed" target="_blank" rel="noopener noreferrer">Introduction to Digital Services</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/JAMK/basics-of-web-development/8588a9ae-5196-4f76-8474-113747894eac" target="_blank" rel="noopener noreferrer">Basics of Web Development</a> (4 cr)</li>
-        </ul>
-      </article>
-
-      <article class="stage">
-        <h2>3) Professional</h2>
-        <p class="goal">Goal: design with business context and communicate professionally.</p>
-        <ul>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/brand-experience-development/35996418-28ef-4630-935c-d5624e82def7" target="_blank" rel="noopener noreferrer">Brand Experience Development</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/professional-communication/e7c29ad3-7955-41ce-831e-ce9f57a6d489" target="_blank" rel="noopener noreferrer">Professional Communication</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/the-craft-of-strategising/d2466218-ed58-42fa-8126-f2dc0cafdca5" target="_blank" rel="noopener noreferrer">The Craft of Strategising</a> (5 cr)</li>
-          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3" target="_blank" rel="noopener noreferrer">Teamwork and Project Management</a> (5 cr)</li>
-        </ul>
-      </article>
-    </section>
+    <h1 id="page-title"></h1>
+    <p class="subtitle" id="page-subtitle"></p>
+    <section class="timeline" id="timeline" aria-live="polite"></section>
+    <div class="footer-tip" id="footer-tip"></div>
   </main>
+
+  <script>
+    const creditsPerMonth = 5;
+
+    function formatMonths(credits) {
+      return Math.max(1, Math.ceil(credits / creditsPerMonth));
+    }
+
+    function createCourseItem(course) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = course.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = course.title;
+
+      item.append(link, document.createTextNode(` (${course.credits} cr)`));
+      return item;
+    }
+
+    function createStage(stage, index) {
+      const article = document.createElement('article');
+      article.className = 'stage';
+
+      const heading = document.createElement('h2');
+      heading.textContent = `${index + 1}) ${stage.title}`;
+
+      const goal = document.createElement('p');
+      goal.className = 'goal';
+      goal.textContent = `Goal: ${stage.goal}`;
+
+      const list = document.createElement('ul');
+      stage.courses.forEach((course) => {
+        list.appendChild(createCourseItem(course));
+      });
+
+      article.append(heading, goal, list);
+      return article;
+    }
+
+    async function loadRoadmap() {
+      const response = await fetch('designer-roadmap.json');
+      if (!response.ok) {
+        throw new Error(`Failed to load roadmap data: ${response.status}`);
+      }
+
+      return response.json();
+    }
+
+    function renderRoadmap(data) {
+      const title = document.getElementById('page-title');
+      const subtitle = document.getElementById('page-subtitle');
+      const timeline = document.getElementById('timeline');
+      const footerTip = document.getElementById('footer-tip');
+
+      const totalCourses = data.stages.reduce((sum, stage) => sum + stage.courses.length, 0);
+      const totalCredits = data.stages.reduce(
+        (sum, stage) => sum + stage.courses.reduce((stageSum, course) => stageSum + course.credits, 0),
+        0,
+      );
+      const estimatedMonths = formatMonths(totalCredits);
+
+      document.title = data.pageTitle;
+      title.textContent = data.pageTitle;
+      subtitle.innerHTML = data.subtitle
+        .replace('{profession}', data.profession)
+        .replace('{courseCount}', `<span class="stat">${totalCourses}</span>`)
+        .replace('{creditCount}', `<span class="stat">${totalCredits}</span>`)
+        .replace('{months}', `<span class="stat">${estimatedMonths}</span>`);
+
+      timeline.replaceChildren(...data.stages.map(createStage));
+      footerTip.textContent = data.footerTip.replace('{creditsPerMonth}', creditsPerMonth);
+    }
+
+    loadRoadmap()
+      .then(renderRoadmap)
+      .catch((error) => {
+        const subtitle = document.getElementById('page-subtitle');
+        subtitle.textContent = `Unable to load roadmap data. ${error.message}`;
+      });
+  </script>
 </body>
 </html>
