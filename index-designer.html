@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphic Designer Skills Roadmap</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --line: #334155;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #f472b6;
+      --accent-soft: rgba(244, 114, 182, 0.16);
+      --card: #1f2937;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #1e1b4b 0%, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    .subtitle { color: var(--muted); max-width: 780px; margin-bottom: 28px; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .meta span {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 14px;
+      padding-left: 22px;
+      border-left: 2px solid var(--line);
+    }
+
+    .stage {
+      position: relative;
+      margin-bottom: 22px;
+      padding: 16px 16px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: linear-gradient(180deg, var(--card), #172033);
+    }
+
+    .stage::before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 20px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+
+    .stage h2 { margin: 0 0 6px; font-size: 1.15rem; }
+    .goal { color: var(--muted); margin: 0 0 10px; font-size: 0.95rem; }
+
+    ul { margin: 0; padding-left: 18px; }
+    li { margin-bottom: 7px; color: #cbd5e1; }
+
+    a {
+      color: #f9a8d4;
+      text-decoration: none;
+      border-bottom: 1px dashed transparent;
+    }
+    a:hover { border-bottom-color: #f9a8d4; }
+
+    .footer-tip {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 1.6rem; }
+      .timeline { margin-left: 8px; padding-left: 16px; }
+      .stage::before { left: -25px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Graphic Designer Roadmap</h1>
+    <p class="subtitle">
+      A practical step-by-step learning path for becoming a strong graphic designer.
+      Courses are ordered from fundamentals to professional strategy and delivery.
+    </p>
+
+    <div class="meta">
+      <span>Level flow: Basics -> Intermediate -> Advanced -> Pro</span>
+      <span>Total stages: 5</span>
+      <span>Format: Click course title to open source</span>
+    </div>
+
+    <section class="timeline">
+      <article class="stage">
+        <h2>1) Foundation: Visual Basics & Core Design Language</h2>
+        <p class="goal">Goal: build core visual literacy and composition skills.</p>
+        <ul>
+          <li><a href="https://opin.fi/en/study-options/OAMK/basics-of-visual-communication/022ed481-fda4-4518-b6f6-c102a5e6b80a" target="_blank" rel="noopener noreferrer">Basics of Visual Communication</a> (3 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/introduction-into-typography/c46c16a9-65b9-441d-8a82-ad1f4afeff60" target="_blank" rel="noopener noreferrer">Introduction into Typography</a> (1 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Humak/visual-communication/37d11baf-e3d1-4094-8a44-624d69038fc9" target="_blank" rel="noopener noreferrer">Visual Communication</a> (5 cr)</li>
+        </ul>
+      </article>
+
+      <article class="stage">
+        <h2>2) Creative Practice: Ideation & Concept Development</h2>
+        <p class="goal">Goal: generate original ideas and solve design problems creatively.</p>
+        <ul>
+          <li><a href="https://opin.fi/en/study-options/Aalto/diving-into-radical-creativity/4b5197cf-c5b8-4c25-a42e-b3d591e6e8ec" target="_blank" rel="noopener noreferrer">Diving into Radical Creativity</a> (3 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/creativity-and-wellbeing-1/5b35e7ed-71ac-4898-90fe-51308db9153c" target="_blank" rel="noopener noreferrer">Creativity and Wellbeing 1</a> (1 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc" target="_blank" rel="noopener noreferrer">Service Design Sprint</a> (2 cr)</li>
+        </ul>
+      </article>
+
+      <article class="stage">
+        <h2>3) Digital Design: UX/UI & Web Fundamentals</h2>
+        <p class="goal">Goal: expand from visual design into product and interface workflows.</p>
+        <ul>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed" target="_blank" rel="noopener noreferrer">Introduction to Digital Services</a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/JAMK/basics-of-web-development/8588a9ae-5196-4f76-8474-113747894eac" target="_blank" rel="noopener noreferrer">Basics of Web Development</a> (4 cr)</li>
+        </ul>
+      </article>
+
+      <article class="stage">
+        <h2>4) Professional Growth: Brand, Communication & Strategy</h2>
+        <p class="goal">Goal: design with business context and communicate professionally.</p>
+        <ul>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/brand-experience-development/35996418-28ef-4630-935c-d5624e82def7" target="_blank" rel="noopener noreferrer">Brand Experience Development</a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/professional-communication/e7c29ad3-7955-41ce-831e-ce9f57a6d489" target="_blank" rel="noopener noreferrer">Professional Communication</a> (5 cr)</li>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/the-craft-of-strategising/d2466218-ed58-42fa-8126-f2dc0cafdca5" target="_blank" rel="noopener noreferrer">The Craft of Strategising</a> (5 cr)</li>
+        </ul>
+      </article>
+
+      <article class="stage">
+        <h2>5) Pro Delivery: Teamwork, Time & Project Execution</h2>
+        <p class="goal">Goal: deliver design work reliably in real project environments.</p>
+        <ul>
+          <li><a href="https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3" target="_blank" rel="noopener noreferrer">Teamwork and Project Management</a> (5 cr)</li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="footer-tip">
+      Planning tip: Complete 1 stage every 4-6 weeks and build one portfolio artifact per stage
+      (poster, brand concept, typography set, landing page mockup, or campaign kit).
+    </p>
+  </main>
+</body>
+</html>
