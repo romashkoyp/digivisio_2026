@@ -138,14 +138,48 @@
 </head>
 <body>
   <main class="container">
-    <h1 id="page-title"></h1>
+    <div style="text-align: center; margin-bottom: 40px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <rect x="18" y="10" width="4" height="4" rx="1"></rect>
+        <rect x="2" y="10" width="4" height="4" rx="1"></rect>
+        <rect x="10" y="18" width="4" height="4" rx="1"></rect>
+        <rect x="10" y="2" width="4" height="4" rx="1"></rect>
+        <path d="M16 12h2"></path>
+        <path d="M6 12h2"></path>
+        <path d="M12 16v2"></path>
+        <path d="M12 6v2"></path>
+        <circle cx="18" cy="6" r="2"></circle>
+        <circle cx="6" cy="6" r="2"></circle>
+        <circle cx="18" cy="18" r="2"></circle>
+        <circle cx="6" cy="18" r="2"></circle>
+        <path d="M16.5 7.5L14.8 9.2"></path>
+        <path d="M7.5 7.5L9.2 9.2"></path>
+        <path d="M16.5 16.5L14.8 14.8"></path>
+        <path d="M7.5 16.5L9.2 14.8"></path>
+      </svg>
+      <h1 style="font-size: 2.5rem; margin-top: 10px;">Skill Matching Machine</h1>
+    </div>
+
+    <div style="margin-bottom: 30px; display: flex; flex-direction: column; gap: 8px;">
+      <label for="profession-select" style="font-weight: bold; font-size: 1.1rem;">Choose a profession and AI will match the most valuable skills with 5000 open higher education courses from <a href="https://opin.fi/en/search" target="_blank" rel="noopener noreferrer">opin.fi</a>:</label>
+      <select id="profession-select" style="padding: 10px; border-radius: 6px; background: var(--panel); color: var(--text); border: 1px solid var(--line); font-size: 1rem; max-width: 300px;">
+        <option value="">-- Loading... --</option>
+      </select>
+    </div>
+
+    <h2 id="page-title"></h2>
     <p class="subtitle" id="page-subtitle"></p>
+    <p id="voucher-info" style="display: none; margin-top: -15px; margin-bottom: 25px; color: var(--muted);">
+      You can apply for a voucher up to 30 credits. See more information <a href="https://opin.fi/en/opintoseteli" target="_blank" rel="noopener noreferrer">here</a>.
+    </p>
     <section class="timeline" id="timeline" aria-live="polite"></section>
-    <div class="footer-tip" id="footer-tip"></div>
+    <div class="footer-tip" id="footer-tip" style="display: none;"></div>
   </main>
 
   <script>
     const creditsPerMonth = 5;
+    let roadmapsData = {};
 
     function formatMonths(credits) {
       return Math.max(1, Math.ceil(credits / creditsPerMonth));
@@ -183,13 +217,44 @@
       return article;
     }
 
-    async function loadRoadmap() {
-      const response = await fetch('designer-roadmap.json');
-      if (!response.ok) {
-        throw new Error(`Failed to load roadmap data: ${response.status}`);
+    async function init() {
+      try {
+        const response = await fetch('roadmaps.json');
+        if (!response.ok) {
+          throw new Error(`Failed to load roadmaps data: ${response.status}`);
+        }
+        roadmapsData = await response.json();
+        
+        // Define the list of "hot" profession keys
+        const hotProfessions = [
+          'hr_specialist',
+          'financial_specialist',
+          'ai_digital_marketing_strategist',
+          'psychology_wellbeing_social_care'
+        ];
+        
+        const select = document.getElementById('profession-select');
+        select.innerHTML = '<option value="">-- Select --</option>';
+        
+        for (const key of Object.keys(roadmapsData)) {
+          const option = document.createElement('option');
+          const profession = roadmapsData[key].profession;
+          option.value = key;
+          
+          // Capitalize each word for the display text
+          let optionText = profession.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+          
+          // Append the special mark if the key is in our hot list
+          if (hotProfessions.includes(key)) {
+            optionText += ' 🔥'; 
+          }
+          
+          option.textContent = optionText;
+          select.appendChild(option);
+        }
+      } catch (error) {
+        document.getElementById('page-subtitle').textContent = `Unable to load data. ${error.message}`;
       }
-
-      return response.json();
     }
 
     function renderRoadmap(data) {
@@ -214,15 +279,31 @@
         .replace('{months}', `<span class="stat">${estimatedMonths}</span>`);
 
       timeline.replaceChildren(...data.stages.map(createStage));
+      footerTip.style.display = 'block';
+      document.getElementById('voucher-info').style.display = 'block'; // <-- Add this line
       footerTip.textContent = data.footerTip.replace('{creditsPerMonth}', creditsPerMonth);
     }
 
-    loadRoadmap()
-      .then(renderRoadmap)
-      .catch((error) => {
-        const subtitle = document.getElementById('page-subtitle');
-        subtitle.textContent = `Unable to load roadmap data. ${error.message}`;
-      });
+    document.getElementById('profession-select').addEventListener('change', (e) => {
+      const selectedValue = e.target.value;
+      const title = document.getElementById('page-title');
+      const subtitle = document.getElementById('page-subtitle');
+      const timeline = document.getElementById('timeline');
+      const footerTip = document.getElementById('footer-tip');
+
+      if (!selectedValue || !roadmapsData[selectedValue]) {
+        title.textContent = '';
+        subtitle.textContent = selectedValue ? `No data available for ${selectedValue}.` : '';
+        timeline.replaceChildren();
+        footerTip.style.display = 'none';
+        document.getElementById('voucher-info').style.display = 'none'; // <-- Add this line
+        return;
+      }
+
+      renderRoadmap(roadmapsData[selectedValue]);
+    });
+
+    init();
   </script>
 </body>
 </html>

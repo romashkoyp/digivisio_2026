@@ -1,0 +1,518 @@
+{
+  "hr_specialist": {
+    "pageTitle": "Human Resources (HR) Specialist Roadmap",
+    "profession": "HR specialist",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "Build essential communication, interpersonal, and empathetic skills for human-centric work.",
+        "courses": [
+          {
+            "title": "Effective Workplace Communication",
+            "url": "https://opin.fi/en/study-options/KAMK/effective-workplace-communication/635dd652-4a73-4d2a-a41c-9dea2ab4cf3c",
+            "credits": 5
+          },
+          {
+            "title": "Interpersonal skills",
+            "url": "https://opin.fi/en/study-options/KAMK/interpersonal-skills/9f4f569b-db6e-402e-bde1-93b9db622c17",
+            "credits": 3
+          },
+          {
+            "title": "Compassion at Work",
+            "url": "https://opin.fi/en/study-options/Arcada/compassion-at-work/8846265d-0e5a-4e6b-ae80-4ff8f58c7e9d",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "Manage disputes, workplace organization, and learn how to navigate confidentiality and ethical standards.",
+        "courses": [
+          {
+            "title": "Dialogicality and emotions at work",
+            "url": "https://opin.fi/en/study-options/XAMK/dialogicality-and-emotions-at-work/66b7d693-da18-41a1-b754-a1fcb70c2bb6",
+            "credits": 4
+          },
+          {
+            "title": "Teamwork and Project Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3",
+            "credits": 5
+          },
+          {
+            "title": "Business Ethics (Yritysetiikka)",
+            "url": "https://opin.fi/en/study-options/TUNI/business-ethics-yritysetiikka/bc5191a7-4a74-4610-9768-757ce94923f2",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "Develop talent coaching networks, master leadership dynamics, and execute data-driven, critical decisions.",
+        "courses": [
+          {
+            "title": "Perspectives on Leadership",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/perspectives-on-leadership/75b13214-aaa0-4891-a80c-e7746370f70f",
+            "credits": 5
+          },
+          {
+            "title": "Leading Learning in the Workplace",
+            "url": "https://opin.fi/en/study-options/Metropolia/leading-learning-in-the-workplace/def66662-1648-4062-bcda-1c5434140df7",
+            "credits": 5
+          },
+          {
+            "title": "Data-driven Decision Making",
+            "url": "https://opin.fi/en/study-options/Laurea/data-driven-decision-making/3f0e22b0-23c1-48de-8305-7c0ae720d917",
+            "credits": 5
+          },
+          {
+            "title": "(Eco)critical sustainability",
+            "url": "https://opin.fi/en/study-options/Oulu/ecocritical-sustainability/8fb4f820-ec13-43bd-8cf2-80ae0073f622",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
+  "financial_specialist": {
+    "pageTitle": "Financial Specialist Roadmap",
+    "profession": "financial specialist",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "Build core financial literacy, foundational accounting principles, and business communication fluency.",
+        "courses": [
+          {
+            "title": "Basics of Financial Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/basics-of-financial-management/b637afc5-1e23-4271-a6d1-f6e571306a3b",
+            "credits": 5
+          },
+          {
+            "title": "Business Communication in English",
+            "url": "https://opin.fi/en/study-options/Metropolia/business-communication-in-english/c748158f-1c68-487f-b010-e63f11f9f2c6",
+            "credits": 5
+          },
+          {
+            "title": "Change capability",
+            "url": "https://opin.fi/en/study-options/Humak/change-capability/d3a4f788-37eb-4313-97c7-60c7aa9c9948",
+            "credits": 1
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "Develop analytical proficiency, cross-functional collaboration, and strategic business-driven value creation.",
+        "courses": [
+          {
+            "title": "Data Analytics in Decision-Making",
+            "url": "https://opin.fi/en/study-options/TUNI/data-analytics-in-decision-making/06b98187-8647-4a72-9ecd-5dd9ae27e6b4",
+            "credits": 5
+          },
+          {
+            "title": "Teamwork and Project Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3",
+            "credits": 5
+          },
+          {
+            "title": "Introduction to Strategic Business Development",
+            "url": "https://opin.fi/en/study-options/uwasa/introduction-to-strategic-business-development/577fce2b-045f-4043-9715-4a90e7813bd9",
+            "credits": 3
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "Harness advanced financial analytics, leverage AI automation, and implement sustainable strategic leadership.",
+        "courses": [
+          {
+            "title": "Managerial accounting and finance for decision-makers",
+            "url": "https://opin.fi/en/study-options/Aalto/managerial-accounting-and-finance-for-decision-makers/f39d9613-5df2-4bd2-841f-87aac37083fa",
+            "credits": 5
+          },
+          {
+            "title": "AI in Finance using Python",
+            "url": "https://opin.fi/en/study-options/Metropolia/ai-in-finance-using-python/fbf4ef5b-df17-47a8-9501-7390ee5c8c3a",
+            "credits": 3
+          },
+          {
+            "title": "Behavioral Decision-Making Perspective in Business and Public Policy",
+            "url": "https://opin.fi/en/study-options/Laurea/behavioral-decision-making-perspective-in-business-and-public-policy/5ea77d24-fd93-4881-821b-36d7bdd60388",
+            "credits": 5
+          },
+          {
+            "title": "Sustainable Leadership",
+            "url": "https://opin.fi/en/study-options/VAMK/sustainable-leadership/99bedde8-97ad-4fb0-920d-7b9f510dede7",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
+  "ai_digital_marketing_strategist": {
+    "pageTitle": "AI & Digital Marketing Strategist Roadmap",
+    "profession": "AI & digital marketing strategist",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "Build core marketing models, understand customer profiles, and master foundational social media content strategies.",
+        "courses": [
+          {
+            "title": "Customer Insight and Marketing",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/customer-insight-and-marketing/18ca1bab-c4a6-415e-9a89-6d5b8f767d5a",
+            "credits": 5
+          },
+          {
+            "title": "Instagram and Social Media Strategies for Business Success",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/instagram-and-social-media-strategies-for-business-success/d064cc72-d19e-4ff2-8807-459c023d6647",
+            "credits": 2
+          },
+          {
+            "title": "Digital and Content Marketing Strategies for Business Success",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/digital-and-content-marketing-strategies-for-business-success/c643c7e4-cff2-42df-9372-74c95c181f5a",
+            "credits": 2
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "Gain expertise in search visibility, omni-channel campaigns, conversion optimization, and web analytics tracking.",
+        "courses": [
+          {
+            "title": "Search Engine Optimization and Email Marketing Strategies for Business Success",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/search-engine-optimization-and-email-marketing-strategies-for-business-success/05539ade-920c-47a0-b8c9-448280321585",
+            "credits": 3
+          },
+          {
+            "title": "YouTube, TikTok, and LinkedIn Strategies for Business Success",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/youtube%2C-tiktok%2C-and-linkedin-strategies-for-business-success/bb62fe71-72ee-4ebb-ba99-44226574b8d0",
+            "credits": 3
+          },
+          {
+            "title": "Web and social media analytics",
+            "url": "https://opin.fi/en/study-options/XAMK/web-and-social-media-analytics/27e3b985-c5d9-4eea-adde-454f631a67dd",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "Integrate artificial intelligence pilots, design conversational bots, automate business workflows, and lead strategic campaigns.",
+        "courses": [
+          {
+            "title": "AI Digital Marketing Tools in Modern Business",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/ai-digital-marketing-tools-in-modern-business/ed533b34-1bba-4cc1-adda-1af0b64bd6bd",
+            "credits": 3
+          },
+          {
+            "title": "AI in Modern Business",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/ai-in-modern-business/c7c67828-0bc0-47d2-b4dd-3e1cad89eadb",
+            "credits": 5
+          },
+          {
+            "title": "Marketing Strategy and Practice",
+            "url": "https://opin.fi/en/study-options/Metropolia/marketing-strategy-and-practice/7793df97-a9ee-4722-b35f-fdf7e66aa7f4",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
+  "psychology_wellbeing_social_care": {
+    "pageTitle": "Psychology & Wellbeing in Social Care Roadmap",
+    "profession": "psychology and wellbeing specialist in social care",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "Build a comprehensive foundation in psychology, human lifespan development, and professional social ethics.",
+        "courses": [
+          {
+            "title": "Basics of Business Psychology 5cr",
+            "url": "https://opin.fi/en/study-options/KAMK/basics-of-business-psychology-5cr/7d5415aa-08a3-4036-ac2f-6033a5213a8f",
+            "credits": 5
+          },
+          {
+            "title": "Life-span and Life Course in Human Development",
+            "url": "https://opin.fi/en/study-options/OAMK/life-span-and-life-course-in-human-development/4f5c84df-dcd4-4a65-a7e0-a90199efb678",
+            "credits": 5
+          },
+          {
+            "title": "Ethics and Values in the Social Field",
+            "url": "https://opin.fi/en/study-options/OAMK/ethics-and-values-in-the-social-field/af8673a3-b063-4362-a27b-a93931d158e3",
+            "credits": 6
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "Master applied clinical support for mental health, crisis intervention, special education, and mindful self-regulation.",
+        "courses": [
+          {
+            "title": "Basics of mental health, crisis and substance abuse work",
+            "url": "https://opin.fi/en/study-options/Diak/basics-of-mental-health%2C-crisis-and-substance-abuse-work/15ac13ca-3807-42d6-be24-c31a36590cfe",
+            "credits": 5
+          },
+          {
+            "title": "Mindfulness and wellbeing",
+            "url": "https://opin.fi/en/study-options/XAMK/mindfulness-and-wellbeing/968a5df4-9cad-4c05-8282-68804e2a9eb7",
+            "credits": 5
+          },
+          {
+            "title": "Special Education in Different Phases of Life",
+            "url": "https://opin.fi/en/study-options/Metropolia/special-education-in-different-phases-of-life/71e1adc2-a28d-4dbd-a286-7cf287b527ba",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "Execute advanced client evaluations, mitigate professional compassion fatigue, and lead multidisciplinary social support networks.",
+        "courses": [
+          {
+            "title": "Social Well-being and Mental Health",
+            "url": "https://opin.fi/en/study-options/Metropolia/social-well-being-and-mental-health/c55fd348-0048-44a5-90cc-2b2dc0efd50b",
+            "credits": 5
+          },
+          {
+            "title": "Work with mental health problems of children and young people",
+            "url": "https://opin.fi/en/study-options/Diak/work-with-mental-health-problems-of-children-and-young-people/c63a236f-81e8-4e93-8051-9cc3b2d227c3",
+            "credits": 5
+          },
+          {
+            "title": "Multidisciplinary rehabilitation",
+            "url": "https://opin.fi/en/study-options/Karelia/multidisciplinary-rehabilitation/832eed16-69b6-4e26-8757-686d0a92156d",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
+  "designer": {
+    "pageTitle": "Graphic Designer Roadmap",
+    "profession": "graphic designer",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "build core visual literacy and creative confidence.",
+        "courses": [
+          {
+            "title": "Basics of Visual Communication",
+            "url": "https://opin.fi/en/study-options/OAMK/basics-of-visual-communication/022ed481-fda4-4518-b6f6-c102a5e6b80a",
+            "credits": 3
+          },
+          {
+            "title": "Introduction into Typography",
+            "url": "https://opin.fi/en/study-options/Metropolia/introduction-into-typography/c46c16a9-65b9-441d-8a82-ad1f4afeff60",
+            "credits": 1
+          },
+          {
+            "title": "Visual Communication",
+            "url": "https://opin.fi/en/study-options/Humak/visual-communication/37d11baf-e3d1-4094-8a44-624d69038fc9",
+            "credits": 5
+          },
+          {
+            "title": "Diving into Radical Creativity",
+            "url": "https://opin.fi/en/study-options/Aalto/diving-into-radical-creativity/4b5197cf-c5b8-4c25-a42e-b3d591e6e8ec",
+            "credits": 3
+          },
+          {
+            "title": "Creativity and Wellbeing 1",
+            "url": "https://opin.fi/en/study-options/Metropolia/creativity-and-wellbeing-1/5b35e7ed-71ac-4898-90fe-51308db9153c",
+            "credits": 1
+          },
+          {
+            "title": "Service Design Sprint",
+            "url": "https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc",
+            "credits": 2
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "expand from visual design into product and interface workflows.",
+        "courses": [
+          {
+            "title": "Introduction to Digital Services",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed",
+            "credits": 5
+          },
+          {
+            "title": "Basics of Web Development",
+            "url": "https://opin.fi/en/study-options/JAMK/basics-of-web-development/8588a9ae-5196-4f76-8474-113747894eac",
+            "credits": 4
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "design with business context and communicate professionally.",
+        "courses": [
+          {
+            "title": "Brand Experience Development",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/brand-experience-development/35996418-28ef-4630-935c-d5624e82def7",
+            "credits": 5
+          },
+          {
+            "title": "Professional Communication",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/professional-communication/e7c29ad3-7955-41ce-831e-ce9f57a6d489",
+            "credits": 5
+          },
+          {
+            "title": "The Craft of Strategising",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/the-craft-of-strategising/d2466218-ed58-42fa-8126-f2dc0cafdca5",
+            "credits": 5
+          },
+          {
+            "title": "Teamwork and Project Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
+  "manager": {
+    "pageTitle": "Project Manager Roadmap",
+    "profession": "project manager",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "understand the core project management role, build communication fundamentals, and learn how to identify market opportunities.",
+        "courses": [
+          {
+            "title": "Service Design and Productization",
+            "url": "https://opin.fi/en/study-options/Humak/service-design-and-productization/c31a21e9-d1e9-4e7b-995a-63d7326a47ee",
+            "credits": 5
+          },
+          {
+            "title": "Effective Workplace Communication",
+            "url": "https://opin.fi/en/study-options/KAMK/effective-workplace-communication/635dd652-4a73-4d2a-a41c-9dea2ab4cf3c",
+            "credits": 5
+          },
+          {
+            "title": "The Art of Innovation Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/the-art-of-innovation-management/c15ba058-8823-4be2-87f6-10648786ba0c",
+            "credits": 5
+          },
+          {
+            "title": "Competitive Advantage Through Customer Development (OPEN UNI)",
+            "url": "https://opin.fi/en/study-options/Oulu/competitive-advantage-through-customer-development-open-uni/6f7b9298-cfbe-4df8-a29c-e9701945f50e",
+            "credits": 5
+          },
+          {
+            "title": "Customer Insight",
+            "url": "https://opin.fi/en/study-options/JAMK/customer-insight/816449e4-b711-4fbe-b694-87b55244e7dd",
+            "credits": 5
+          },
+          {
+            "title": "Customer Insight and Marketing",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/customer-insight-and-marketing/18ca1bab-c4a6-415e-9a89-6d5b8f767d5a",
+            "credits": 5
+          },
+          {
+            "title": "Strategic Management",
+            "url": "https://opin.fi/en/study-options/Metropolia/strategic-management/e4060880-e6d5-48df-821b-9ad1b0d80d9a",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "execute projects using agile methodologies, manage stakeholders effectively, and implement proper planning and risk control.",
+        "courses": [
+          {
+            "title": "Scrum Basics",
+            "url": "https://opin.fi/en/study-options/Metropolia/scrum-basics/80cf3154-04f6-42da-99e0-a0df342deb35",
+            "credits": 3
+          },
+          {
+            "title": "Introduction to Digital Services",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/introduction-to-digital-services/c0e0d3a6-d5fa-4f46-adbe-50dc3a4bbaed",
+            "credits": 5
+          },
+          {
+            "title": "Service Design Sprint",
+            "url": "https://opin.fi/en/study-options/Metropolia/service-design-sprint/05e0298a-7264-4a00-b0b8-1b8cafb2d3fc",
+            "credits": 2
+          },
+          {
+            "title": "Customer-oriented Developing and Innovation",
+            "url": "https://opin.fi/en/study-options/TAMK/customer-oriented-developing-and-innovation/29142f8c-b14d-4ea0-8ea2-58921fac7eb1",
+            "credits": 4
+          },
+          {
+            "title": "Introduction to Software Engineering",
+            "url": "https://opin.fi/en/study-options/TUNI/introduction-to-software-engineering/40532bc8-c56b-4cf0-ad87-d687a1aa2b84",
+            "credits": 5
+          },
+          {
+            "title": "Collaboration and Negotiation Skills",
+            "url": "https://opin.fi/en/study-options/Metropolia/collaboration-and-negotiation-skills/05c1523f-5fe3-48b9-a77b-aead33742a3c",
+            "credits": 4
+          },
+          {
+            "title": "Professional Project Management Fundamentals (Oracle Academy)",
+            "url": "https://opin.fi/en/study-options/Metropolia/professional-project-management-fundamentals-with-oracle-academy/5fbe2632-d288-4ac8-b40e-eebb28bc4413",
+            "credits": 5
+          },
+          {
+            "title": "Basics of Organizational Safety, Security and Risk Management",
+            "url": "https://opin.fi/en/study-options/Laurea/basics-of-organizational-safety%2C-security-and-risk-management/e014b12d-6f85-438d-82d3-b429f0f45fd5",
+            "credits": 5
+          },
+          {
+            "title": "Networks and Development",
+            "url": "https://opin.fi/en/study-options/Humak/networks-and-development/e5930e9e-682b-4d00-9928-742a8dc0b3d3",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "lead cross-functional teams, make data-driven strategic decisions, and manage AI-enabled project environments.",
+        "courses": [
+          {
+            "title": "Data-driven Decision Making",
+            "url": "https://opin.fi/en/study-options/Laurea/data-driven-decision-making/3f0e22b0-23c1-48de-8305-7c0ae720d917",
+            "credits": 5
+          },
+          {
+            "title": "Introduction to Data Analytics",
+            "url": "https://opin.fi/en/study-options/XAMK/introduction-to-data-analytics/dab0e8e3-e7fd-4217-8713-92ca0edbad95",
+            "credits": 5
+          },
+          {
+            "title": "Marketing Strategy and Practice",
+            "url": "https://opin.fi/en/study-options/Metropolia/marketing-strategy-and-practice/7793df97-a9ee-4722-b35f-fdf7e66aa7f4",
+            "credits": 5
+          },
+          {
+            "title": "Growth Management in Enterprises (OPEN UNI)",
+            "url": "https://opin.fi/en/study-options/Oulu/growth-management-in-enterprises-open-uni/903f94de-337c-4a89-af43-ac7003a867de",
+            "credits": 5
+          },
+          {
+            "title": "Team Leadership",
+            "url": "https://opin.fi/en/study-options/Metropolia/team-leadership/34f76092-a606-40c7-93be-d9c98cdf6626",
+            "credits": 1
+          },
+          {
+            "title": "Elements of AI: Introduction to AI",
+            "url": "https://opin.fi/en/study-options/HY/elements-of-ai-introduction-to-ai/27d4b733-085e-4d4a-b98d-add0bff0b24d",
+            "credits": 2
+          }
+        ]
+      }
+    ]
+  }
+}
