@@ -1,4 +1,75 @@
 {
+  "transport_dispatcher": {
+    "pageTitle": "Transport Dispatcher Career Transition Roadmap",
+    "profession": "transport dispatcher",
+    "subtitle": "A practical step-by-step learning path for becoming a strong {profession} based on demanding skills. Path includes {courseCount} courses with {creditCount} credits. You need at least {months} months to complete the roadmap.",
+    "footerTip": "Credit estimate uses {creditsPerMonth} credits as one month of full-time study.",
+    "stages": [
+      {
+        "title": "Foundation",
+        "goal": "Establish foundational logistics systems knowledge, intermediate spreadsheet capabilities, and professional workplace communication.",
+        "courses": [
+          {
+            "title": "World of Logistics",
+            "url": "https://opin.fi/en/study-options/JAMK/world-of-logistics/bdf58038-0093-4376-9a31-680065b578de",
+            "credits": 5
+          },
+          {
+            "title": "Applied Digital Skills",
+            "url": "https://opin.fi/en/study-options/KAMK/applied-digital-skills/749db06d-6f4f-49d5-9944-2dda47f66ddf",
+            "credits": 3
+          },
+          {
+            "title": "Effective Workplace Communication",
+            "url": "https://opin.fi/en/study-options/KAMK/effective-workplace-communication/635dd652-4a73-4d2a-a41c-9dea2ab4cf3c",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Intermediate",
+        "goal": "Develop scheduling design methods, understand regulatory frameworks of transit networks, and align team workflows.",
+        "courses": [
+          {
+            "title": "Production Planning",
+            "url": "https://opin.fi/en/study-options/Centria/production-planning/1c444755-683d-40a5-a0bd-24d4131ba10d",
+            "credits": 4
+          },
+          {
+            "title": "Transportation Modes",
+            "url": "https://opin.fi/en/study-options/JAMK/transportation-modes/fb2ac24e-06c7-4329-b802-2fe3f95a24b9",
+            "credits": 5
+          },
+          {
+            "title": "Teamwork and Project Management",
+            "url": "https://opin.fi/en/study-options/Haaga-Helia/teamwork-and-project-management/5fe4c2ef-1e4e-4690-a033-2a086e5dcac3",
+            "credits": 5
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "goal": "Master collaborative negotiations with internal or external stakeholders, evaluate transport safety, and build risk response models.",
+        "courses": [
+          {
+            "title": "Collaboration and Negotiation Skills",
+            "url": "https://opin.fi/en/study-options/Metropolia/collaboration-and-negotiation-skills/05c1523f-5fe3-48b9-a77b-aead33742a3c",
+            "credits": 4
+          },
+          {
+            "title": "Basics of Organizational Safety, Security and Risk Management",
+            "url": "https://opin.fi/en/study-options/Laurea/basics-of-organizational-safety%2C-security-and-risk-management/e014b12d-6f85-438d-82d3-b429f0f45fd5",
+            "credits": 5
+          },
+          {
+            "title": "Preparing for Disruptions in Organisations and Society (Master)",
+            "url": "https://opin.fi/en/study-options/Savonia/preparing-for-disruptions-in-organisations-and-society-master/137070ee-4d06-47b3-94f1-9f9a37cc9c98",
+            "credits": 5
+          }
+        ]
+      }
+    ]
+  },
   "hr_specialist": {
     "pageTitle": "Human Resources (HR) Specialist Roadmap",
     "profession": "HR specialist",
