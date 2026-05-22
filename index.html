@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>Skill Matching Machine</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -280,7 +280,7 @@
 
       timeline.replaceChildren(...data.stages.map(createStage));
       footerTip.style.display = 'block';
-      document.getElementById('voucher-info').style.display = 'block'; // <-- Add this line
+      document.getElementById('voucher-info').style.display = 'block';
       footerTip.textContent = data.footerTip.replace('{creditsPerMonth}', creditsPerMonth);
     }
 
@@ -296,7 +296,7 @@
         subtitle.textContent = selectedValue ? `No data available for ${selectedValue}.` : '';
         timeline.replaceChildren();
         footerTip.style.display = 'none';
-        document.getElementById('voucher-info').style.display = 'none'; // <-- Add this line
+        document.getElementById('voucher-info').style.display = 'none';
         return;
       }
 
