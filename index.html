@@ -134,12 +134,25 @@
       .timeline { margin-left: 8px; padding-left: 16px; }
       .stage::before { left: -25px; }
     }
+
+    @keyframes slow-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotating-svg {
+      animation: slow-spin 20s linear infinite;
+    }
   </style>
 </head>
 <body>
   <main class="container">
     <div style="text-align: center; margin-bottom: 40px;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="rotating-svg" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="4"></circle>
         <rect x="18" y="10" width="4" height="4" rx="1"></rect>
         <rect x="2" y="10" width="4" height="4" rx="1"></rect>
